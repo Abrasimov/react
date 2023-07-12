@@ -1,0 +1,19 @@
+@value header-font-size: 34px;
+@value color-red: red;
+
+.root {
+    font-size: header-font-size;
+    font-weight: 400;
+    border: 2px solid seagreen;
+}
+
+.error {
+    composes: root;
+    font-weight: 700;
+    color: red;
+}
+
+.warning {
+    composes: root;
+    color: yellow;
+}

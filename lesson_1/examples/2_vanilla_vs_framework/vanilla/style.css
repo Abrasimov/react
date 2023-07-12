@@ -1,0 +1,39 @@
+body {
+    font-family: Monaco;
+    font-size: 14px;
+}
+
+.posts-wrapper {
+    width: 400px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-wrapper {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 400px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
