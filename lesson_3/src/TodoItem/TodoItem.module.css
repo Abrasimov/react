@@ -1,0 +1,38 @@
+.container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    margin: 20px;
+}
+
+.containerCompleted {
+    composes: container;
+    background-color: #56e594;
+}
+
+.checkboxesWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #282c34;
+}
+
+.label {
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.label input {
+    margin-right: 10px;
+}
+
+.itemBody {
+    font-size: 22px;
+}
+
+.itemBodyCollapsed {
+    composes: itemBody;
+    display: none;
+}
