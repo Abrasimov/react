@@ -14,5 +14,5 @@
 
 ### TODO
 
-- [ ] Emotion, explain issue (absence of ";" at the end of statement)
+- [x] Emotion, explain issue (absence of ";" at the end of statement)
 - [ ] Show react-icons usage (npm i react-icons, https://react-icons.github.io/react-icons)

@@ -7,22 +7,27 @@ class TodoItem extends Component {
     static defaultProps = {
         id: 'Default ID',
         title: 'Default title',
-        description: 'Default description'
+        description: 'Default description',
+        collapsedByDefault: false
     };
 
     static propTypes = {
+        collapsedByDefault: PropTypes.bool.isRequired,
         id: PropTypes.string,
         title: PropTypes.string,
         description: PropTypes.string,
-        handleDeleteItem: PropTypes.func.isRequired
+        handleDeleteItem: PropTypes.func.isRequired,
+        handleCompleteTask: PropTypes.func.isRequired
     };
 
     constructor(props) {
         super(props);
 
+        const {collapsedByDefault} = props;
+
         this.state = {
-            isCollapsed: false,
-            isCompleted: false,
+            isCollapsed: collapsedByDefault,
+            isCompleted: false
         };
     }
 
@@ -35,7 +40,7 @@ class TodoItem extends Component {
     }
 
     render() {
-        const {id, title, description} = this.props;
+        const {id, title, description, handleDeleteItem} = this.props;
 
         return <div className={this.state.isCompleted ? style.containerCompleted : style.container}>
             <div className={style.checkboxesWrapper}>
@@ -57,7 +62,7 @@ class TodoItem extends Component {
                     />
                     Completed
                 </label>
-                <button onClick={() => {this.props.handleDeleteItem(this.props.id)}}>X</button>
+                <button onClick={() => {handleDeleteItem(this.props.id)}}>X</button>
             </div>
             <div className={this.state.isCollapsed ? style.itemBodyCollapsed : style.itemBody}>
                 <h3>ID: {id}</h3>

@@ -1,5 +1,14 @@
 .wrapper {
     display: flex;
+    flex-direction: column;
+}
+
+.incrementWrapper {
+
+}
+
+.todoItemsWrapper {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
