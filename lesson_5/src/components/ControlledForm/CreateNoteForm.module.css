@@ -1,0 +1,75 @@
+.wrapper {
+    width: 500px;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper input,
+.wrapper textarea {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightblue;
+    padding: 10px;
+}
+
+.wrapper input {
+    height: 25px;
+}
+
+.wrapper textarea {
+    min-height: 100px;
+}
+
+.wrapper label {
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.wrapper button {
+    height: 35px;
+    font-size: 20px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.wrapper fieldset {
+    margin-bottom: 20px;
+}
+
+.wrapper fieldset label {
+    margin: 10px;
+}
+
+.wrapper select {
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.checkboxWrapper {
+    margin-top: 20px;
+    text-align: start;
+}
+
+.checkboxWrapper input {
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.error {
+    font-size: 15px;
+    color: red;
+    margin-top: -10px;
+}

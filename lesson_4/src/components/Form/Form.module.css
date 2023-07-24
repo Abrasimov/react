@@ -1,0 +1,30 @@
+.wrapper {
+    width: 500px;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper input {
+    height: 25px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightblue;
+    padding: 10px;
+}
+
+.wrapper button {
+    height: 35px;
+    font-size: 20px;
+    width: 150px;
+}
