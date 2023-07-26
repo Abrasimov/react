@@ -32,7 +32,7 @@ class Notes extends Component {
         }
     }
 
-    handleSearch = (e) => {
+    handleSearch(e) {
         this.setState({searchPhrase: e.target.value})
     }
 
